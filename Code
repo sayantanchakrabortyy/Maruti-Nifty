@@ -1,0 +1,10 @@
+view(Maruti_Nifty)
+attach(Maruti_Nifty)
+summary(Maruti_Nifty
+plot(Date, Nifty_Return, type = "l", lwd=2, ylab = "Nifty", col="red", main = "Nifty Returns")
+plot(Date, Maruti_Return, type = "l", lwd=2, ylab = "Maruti", col="blue", main = "Maruti Returns")
+lines(Date, Nifty_Return, col="red")
+legend("topleft", legend = c("Maruti","Nifty"), fill=c("blue","red"))
+cov(Maruti_Return,Nifty_Return)
+var(Nifty_Return)
+cov(Maruti_Return,Nifty_Return)/var(Nifty_Return)
